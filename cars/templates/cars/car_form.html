@@ -3,11 +3,16 @@
 
 
 {%block content%}
-<form method="post">
+
+
+
+<form class="col s12 m6 l4" method="post">
 	{%csrf_token%}
 	{{form.as_p}}
 	<input type="submit" value="Guardar">
 </form>
+
+
 {%endblock content%}
 
 {%block scripts%}
