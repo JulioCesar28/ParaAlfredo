@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{%block titulo%} Lista de Coches {%endblock titulo%}
+
+{%block content%}
+<div class="row">
+{%for car in object_list%}
+
+
+
+ 
+        <div class="col s4">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img src="{{car.foto.url}}">
+              <span class="card-title">{{car.modelo}}</span>
+            </div>
+            <div class="card-content">
+              <p>{{car.issue}}</p>
+            </div>
+            <div class="card-action">
+              <a href="#!">Ver más</a>
+            </div>
+          </div>
+        </div>
+ 
+
+
+
+
+{%endfor%}
+</div>
+{%endblock content%}
