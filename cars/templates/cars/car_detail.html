@@ -1,0 +1,11 @@
+{%extends 'base.html'%}
+
+{%block content%}
+
+<h1>{{car.model}}</h1>
+<p>Fecha: <span>{{car.fecha}}</span></p>
+<p>Propietario: <span>{{car.propietario}}</span></p>
+<p>Problemas: <span>{{car.issue}}</span></p>
+<p>foto: <img style="width:100px;" src="{{car.foto.url}}"></p>
+
+{%endblock content%}
